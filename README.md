@@ -16,7 +16,7 @@ The app allows users to search for clothing items by **caption (text)** or by **
 
 ---
 
-## 🛠Tech Stack
+## Tech Stack
 
 ### Frontend (Mobile)
 
