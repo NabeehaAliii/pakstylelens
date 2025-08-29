@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#FFF9F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is your favourite colour? 🎨"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupColour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark" />
+
+            <RadioButton
+                android:id="@+id/rbLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light" />
+
+            <RadioButton
+                android:id="@+id/rbNude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nude" />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferred price range? 💰"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low" />
+
+            <RadioButton
+                android:id="@+id/rbMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/rbHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High" />
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferred style? 👗"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCasual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casual" />
+
+            <RadioButton
+                android:id="@+id/rbFormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formal" />
+
+            <RadioButton
+                android:id="@+id/rbSporty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sporty" />
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourite material? 🧵"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCotton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cotton" />
+
+            <RadioButton
+                android:id="@+id/rbSilk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silk" />
+
+            <RadioButton
+                android:id="@+id/rbWool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wool" />
+        </RadioGroup>
+
+        <!-- Buttons at bottom -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="24dp">
+
+            <Button
+                android:id="@+id/btnSkip"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Skip"
+                android:backgroundTint="#CCCCCC"
+                android:textColor="#000000"
+                android:layout_height="48dp"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Submit"
+                android:backgroundTint="#355E3B"
+                android:textColor="#FFFFFF"
+                android:layout_height="48dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

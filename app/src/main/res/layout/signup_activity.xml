@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4E3"> <!-- Skin background -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/fashion_logo"
+            android:layout_marginTop="40dp" />
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pak Style Lens"
+            android:textColor="#F4A261"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:hint="Username"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:hint="Email"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etSignupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:hint="Password"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:inputType="textPassword" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+
+
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_button_orange" />
+
+    </LinearLayout>
+</ScrollView>

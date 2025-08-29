@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF4E3"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- Input header (Text shown only once) -->
+    <LinearLayout
+        android:id="@+id/inputHeaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp">
+
+        <!-- Optional Text Caption -->
+        <TextView
+            android:id="@+id/inputHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You asked: ..."
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Optional Input Image -->
+        <ImageView
+            android:id="@+id/inputHeaderImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:contentDescription="Input Image"/>
+    </LinearLayout>
+
+    <!-- Result Box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:id="@+id/resultImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Product Image" />
+
+        <TextView
+            android:id="@+id/captionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caption"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/brandText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/fabricText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fabric"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/urlText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Link"
+            android:textColor="#1B75BC"
+            android:autoLink="web"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+</LinearLayout>

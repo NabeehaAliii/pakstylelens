@@ -1,0 +1,49 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+
+# Gradle files
+.gradle/
+build/
+**/build/
+
+# Local configuration
+local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Log files
+*.log
+
+# Android captures
+captures/
+
+# Misc
+.DS_Store
+.env
+
+# Kotlin specific
+.kotlin/
+
+# Keystore files (don’t upload your signing keys)
+*.jks
+*.keystore
+
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.properties
+gradlew.bat
+gradlew
+
+# Generated files
+generated/
+
+# Ignore navigation editor temp files
+.navigation/
+
+# Ignore Google Services config (optional - keep if you want others to use Firebase)
+google-services.json

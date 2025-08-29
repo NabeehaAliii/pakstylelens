@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4E3">
+
+    <!-- Scrollable area (everything above chat input) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/chatLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Top Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/menuButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_sort_by_size"
+                    android:tint="#F4A261"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pak Style Lens"
+                    android:textColor="#F4A261"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/midText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:text="How can I help you with fashion today?"
+                android:textColor="#333333"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <!-- Always visible Logo -->
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="#FFEDD5"
+                android:scaleType="centerCrop"
+                android:contentDescription="Selected Image"
+                android:src="@drawable/fashion_logo"/>
+
+            <!-- Results RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/resultRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Chat Input Fixed at Bottom -->
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#FAEBCD"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/cameraButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Camera Button"
+            android:padding="5dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:tint="#F4A261" />
+
+        <EditText
+            android:id="@+id/chatInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Ask about fashion..."
+            android:maxLines="4"
+            android:minLines="1"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Send"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#F4A261" />
+    </LinearLayout>
+
+</RelativeLayout>
