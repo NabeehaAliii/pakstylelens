@@ -25,12 +25,28 @@ The app allows users to search for clothing items by **caption (text)** or by **
 * **UI:** RecyclerView, ConstraintLayout, XML layouts
 * **Navigation:** Activities + Intents
 
-### Backend (AI & APIs)
+## Backend (fashionclip-api)
 
-* **YOLOv8** → Clothing detection from images
-* **FashionCLIP** → Embedding generation for text + images
-* **Custom Dataset** → Fine-tuned with Eastern & Pakistani fashion data
+PakStyleLens is powered by a separate backend service: **[fashionclip-api](https://github.com/NabeehaAliii/fashionclip-api)**.
 
+### Responsibilities of the backend:
+
+* **AI Inference**
+  * Uses **YOLOv8** to detect clothing items in uploaded images.
+  * Uses **FashionCLIP** (fine-tuned with Eastern fashion data) to generate embeddings for text + image similarity.
+
+* **API Endpoints**
+  * `/search/caption` → Takes user text input and returns matching clothing items.
+  * `/search/image` → Accepts an uploaded image and returns similar fashion items.
+
+* **Data Management**
+  * Custom dataset scraped from Pakistani fashion brands (Khaadi, Limelight, Sana Safinaz, etc.).
+  * Cleaned, structured, and stored in the backend.
+
+### How the app communicates with it:
+
+* The Android frontend uses **Retrofit** (HTTP client for Kotlin/Android) to call the backend APIs.
+* Responses (JSON) are displayed in the app via `RecyclerView`.
 ---
 
 ## Project Structure
